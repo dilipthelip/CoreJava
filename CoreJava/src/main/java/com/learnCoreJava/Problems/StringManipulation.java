@@ -17,7 +17,7 @@ import java.util.Set;
  * 		AC->A
  * 		BC->AC
  * 		BB->B
- * Pring the Final Output
+ * Print the Final Output
  * @author Z001QGD
  *
  */
