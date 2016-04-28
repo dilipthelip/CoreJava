@@ -1,5 +1,7 @@
 package com.learnCoreJava.Problems;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -7,13 +9,15 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ *	String Problem :
  * It the String contains AA replace with AB. Pattern is given below
- * Original String		Replace String
- * 		AA					AB
- * 		AB					AC
- * 		AC					A
- * 		BC					AC
- * 		BB					B
+ * Original String->Replace String
+ * 		AA->AB
+ * 		AB->AC
+ * 		AC->A
+ * 		BC->AC
+ * 		BB->B
+ * Pring the Final Output
  * @author Z001QGD
  *
  */
@@ -43,8 +47,17 @@ public class StringManipulation {
 	}
 
 	public static void main(String[] args) {
+		
+		//System.out.println("Enter something here : ");
+		String input ="";
+		/*try{
+		    BufferedReader bufferRead = new BufferedReader(new InputStreamReader(System.in));
+		    input = bufferRead.readLine();
+		}catch(Exception e){
+			e.printStackTrace();
+		}*/
 
-		String input = "AABCD";
+		input = "AABCD";
 		Map<String,String> map = new LinkedHashMap<String, String>();
 		map.put("AA" , "AB");
 		map.put("AB" , "AC");
