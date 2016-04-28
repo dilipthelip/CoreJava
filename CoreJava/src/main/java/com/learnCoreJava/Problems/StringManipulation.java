@@ -6,6 +6,17 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
+/**
+ * It the String contains AA replace with AB. Pattern is given below
+ * Original String		Replace String
+ * 		AA					AB
+ * 		AB					AC
+ * 		AC					A
+ * 		BC					AC
+ * 		BB					B
+ * @author Z001QGD
+ *
+ */
 public class StringManipulation {
 
 
