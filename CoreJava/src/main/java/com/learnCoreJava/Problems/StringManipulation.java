@@ -25,7 +25,7 @@ public class StringManipulation {
 
 
 	/**
-	 * This method is used to check the finally Constructed String has the Key elements or not
+	 * This method is used to check the finally Constructed String has the Key elements or not.
 	 * @param iterator
 	 * @param input
 	 * @return
@@ -57,12 +57,12 @@ public class StringManipulation {
 			e.printStackTrace();
 		}*/
 
-		input = "AABCD";
+		input = "AABCDBC";
 		Map<String,String> map = new LinkedHashMap<String, String>();
+		map.put("BC" , "AC");
 		map.put("AA" , "AB");
 		map.put("AB" , "AC");
 		map.put("AC" , "A");
-		map.put("BC" , "AC");
 		map.put("BB" , "B");
 		System.out.println("Map : " + map);
 
@@ -79,7 +79,7 @@ public class StringManipulation {
 				key = iterator.next();
 				if(input.contains(key)){
 					//flag=true;
-					input=input.replace(key, map.get(key));
+					input=input.replaceFirst(key, map.get(key));
 				}
 				System.out.println("Changed Input is :" + input);
 			}
